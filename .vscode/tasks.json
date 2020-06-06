@@ -3,25 +3,6 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "Cygwin: g++ build active file",
-			"command": "D:/cygwin64/bin/g++.exe",
-			"args": [
-				"-g",
-				"-std=c++1z",
-				"${file}",
-				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}.exe"
-			],
-			"options": {
-				"cwd": "D:/cygwin64/bin"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build"
-		},
-		{
-			"type": "shell",
 			"label": "Linux: g++ build active file",
 			"command": "/usr/bin/g++",
 			"args": [
