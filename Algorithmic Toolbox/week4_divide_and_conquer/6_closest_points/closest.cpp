@@ -81,12 +81,12 @@ double minimal_distance(vector<pair<long long, long long>>& points,
 	}
 
 	long long mid = low + (high - low) / 2;
-	auto mid_point = points.at(mid);
+	auto mid_point = points.at(mid);  // This is important
 
 	double d = min(minimal_distance(points, low, mid),
 				   minimal_distance(points, mid + 1, high));
 
-	vector<pair<long long, long long>> strip_points, strip_points1;
+	vector<pair<long long, long long>> strip_points;
 
 	merge(points, low, high);
 	for (long long i = low; i <= high; i++) {
