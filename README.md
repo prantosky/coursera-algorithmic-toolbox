@@ -38,7 +38,7 @@
 
 ## Week 5 
 
-*[Money Change Again](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week5_dynamic_programming1/1_money_change_again/change_dp.cpp)
+* [Money Change Again](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week5_dynamic_programming1/1_money_change_again/change_dp.cpp)
 * [Primitive Calculator](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week5_dynamic_programming1/2_primitive_calculator/primitive_calculator.cpp)
 * [Edit Distance](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week5_dynamic_programming1/3_edit_distance/edit_distance.cpp)
 * [Longest Common Subsequence of Two Sequences](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week5_dynamic_programming1/4_longest_common_subsequence_of_two_sequences/lcs2.cpp)
