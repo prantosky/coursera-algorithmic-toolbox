@@ -5,19 +5,22 @@
 
 using namespace std;
 
-bool partition_search(const vector<long long>& A, int index,
-					  vector<long long>& partitions, long long target) {
-	if (index >= A.size()) return true;
-	for (size_t i = 0; i < partitions.size(); i++) {
-		if (partitions[i] + A.at(index) <= target) {
-			partitions[i] += A.at(index);
-			if (partition_search(A, index + 1, partitions, target)) {
-				return true;
+int optimal_weight(int W, const vector<long long>& w) {
+	vector<vector<long long>> values(w.size() + 1, vector<long long>(W + 1));
+	for (size_t i = 0; i <= W; i++) { values[0][i] = 0; }
+	for (size_t i = 0; i <= w.size(); i++) { values[i][0] = 0; }
+
+	for (size_t i = 1; i <= w.size(); i++) {
+		for (size_t j = 1; j <= W; j++) {
+			if (j >= w[i - 1]) {
+				values[i][j] = max(w[i - 1] + values[i - 1][j - w[i - 1]],
+								   values[i - 1][j]);
+			} else {
+				values[i][j] = values[i - 1][j];
 			}
-			partitions[i] -= A.at(index);
 		}
 	}
-	return false;
+	return values[w.size()][W];
 }
 
 bool partition3(vector<long long>& A) {
@@ -32,7 +35,8 @@ bool partition3(vector<long long>& A) {
 	sort(A.begin(), A.end());
 	reverse(A.begin(), A.end());
 	vector<long long> partitions(3, 0);
-	return partition_search(A, 0, partitions, n / 3);
+	return optimal_weight(n / 3, A) == n / 3 and
+		   optimal_weight(2 * n / 3, A) == 2 * n / 3;
 }
 
 int main() {
