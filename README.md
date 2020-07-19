@@ -49,6 +49,6 @@
 
 * [Maximum Amount of Gold](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week6_dynamic_programming2/1_maximum_amount_of_gold/knapsack.cpp)
 * Partitioning Souvenirs
-    * [Approach 1](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week6_dynamic_programming2/2_partitioning_souvenirs/partition3.cpp)
-    * [Approach 2](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week6_dynamic_programming2/2_partitioning_souvenirs/partition3_1.cpp)
+    * [Approach 1](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week6_dynamic_programming2/2_partitioning_souvenirs/partition3.cpp) (Brute Force)
+    * [Approach 2](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week6_dynamic_programming2/2_partitioning_souvenirs/partition3_1.cpp) (Dynamic Programming)
 * [Maximum Value of an Arithmetic Expression](https://github.com/prantostic/coursera-algorithmic-toolbox/blob/master/week6_dynamic_programming2/3_maximum_value_of_an_arithmetic_expression/placing_parentheses.cpp)
